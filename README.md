@@ -7,7 +7,7 @@ Parser runs in linear time using the recursive descent method. Application also 
 ```mermaid
 graph TD;
     Lexer-->Pipe;
-    Lexer-->CharSource;
+    CharSource-->Lexer;
     Pipe-->Parser;
     ASTNodes-->Parser;
     Parser-->Compiler;
