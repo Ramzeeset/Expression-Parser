@@ -18,5 +18,4 @@ flowchart LR
     end
   end
   A --> TOP --> B
-  B1 --> B2
 ```
