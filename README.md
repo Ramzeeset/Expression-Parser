@@ -11,8 +11,9 @@ flowchart LR
         direction RL
         CharSource-->Lexer
     end
-    subgraph B2
-        direction BT
-        i2 -->f2
+    subgraph ParserWorker
+        direction RL
+        Parser
     end
+    LexerWorker-->Pipe-->ParserWorker
 ```
