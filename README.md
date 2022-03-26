@@ -10,5 +10,6 @@ graph TD;
     Lexer-->CharSource;
     CharSource-->Lexer;
     Pipe-->Parser;
+    ASTNodes-->Parser;
     Parser-->Compiler;
 ```
