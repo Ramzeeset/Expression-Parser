@@ -14,6 +14,7 @@ flowchart LR
     subgraph ParserWorker
         Parser
     end
+    InputCode-->LexerWorker
     LexerWorker-->Pipe-->ParserWorker
     ParserWorker-->Compiler
 ```
