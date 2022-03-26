@@ -6,7 +6,6 @@ Parser runs in linear time using the recursive descent method. Application also 
 
 ```mermaid
 flowchart LR
-  subgraph TOP
     direction TB
     subgraph LexerWorker
         direction RL
@@ -16,6 +15,4 @@ flowchart LR
         direction BT
         i2 -->f2
     end
-  end
-  A --> TOP --> B
 ```
