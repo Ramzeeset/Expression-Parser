@@ -8,12 +8,12 @@ Parser runs in linear time using the recursive descent method. Application also 
 flowchart LR
     direction TB
     subgraph LexerWorker
-        direction RL
+        direction LR
         CharSource-->Lexer
     end
     subgraph ParserWorker
-        direction RL
         Parser
     end
     LexerWorker-->Pipe-->ParserWorker
+    ParserWorker-->Compiler
 ```
