@@ -8,9 +8,9 @@ Parser runs in linear time using the recursive descent method. Application also 
 flowchart LR
   subgraph TOP
     direction TB
-    subgraph B1
+    subgraph LexerWorker
         direction RL
-        i1 -->f1
+        CharSource-->Lexer
     end
     subgraph B2
         direction BT
