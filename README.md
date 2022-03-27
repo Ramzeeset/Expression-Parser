@@ -6,16 +6,16 @@ Parser runs in linear time using the recursive descent method. Application also 
 
 ```mermaid
 flowchart LR
+  subgraph Compiler
     direction TB
     subgraph LexerWorker
-        direction LR
         CharSource-->Lexer
     end
-    subgraph ParserWorker
+    subgraph ParseWorker
         Parser
     end
-    InputCode-->LexerWorker
-    LexerWorker-->Pipe-->ParserWorker
-    ParserWorker-->Compiler
-    Compiler-->OutputBinary
+  end
+  Input --> Compiler --> Output
+  LexerWorker-->Pipe-->ParserWorker
+  ParserWorker-->Translator
 ```
