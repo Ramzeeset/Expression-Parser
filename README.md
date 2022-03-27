@@ -10,6 +10,8 @@ flowchart LR
     CharSource-->Lexer
     Lexer-->Pipe
     Pipe-->Parser
+    Parser-->Translator
+    Translator-->CompilerCpp
   end
   Input --> Compiler --> Output
 ```
