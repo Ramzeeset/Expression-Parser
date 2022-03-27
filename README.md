@@ -16,4 +16,5 @@ flowchart LR
     end
   end
   Input --> Compiler --> Output
+  LexerWorker-->Pipe
 ```
