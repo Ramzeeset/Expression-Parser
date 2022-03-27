@@ -9,6 +9,7 @@ flowchart LR
   subgraph Compiler
     direction LR
     CharSource-->Lexer
+    direction TB
     Lexer-->Pipe
     Pipe-->Parser
     Parser-->Translator
